@@ -231,18 +231,6 @@ const ESSearchQueryBuilder = ({
   return query;
 };
 
-// const aggs = {
-//     field: 'brand.code',
-//     size: itemPerPage,
-//     order: 'asc'
-//   };
-
-//   const topHit = {
-//     field: 'title.keyword',
-//     size: numOfProducts,
-//     order: 'asc'
-//   };
-
 //If you want to group search hits, use the collapse parameter instead.
 //https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-metrics-top-hits-aggregation.html
 const ESTopHitsAggsBuilder = ({ aggs, topHit, filters, matches }) => {
